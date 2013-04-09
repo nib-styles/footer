@@ -1,16 +1,3 @@
-@mixin hide-at-breakpoint($name) {
-  .breakpoint-#{$name} & {
-    display: none;
-  }
-}
-
-@mixin show-at-breakpoint($name) {
-  display: none;
-  .breakpoint-#{$name} & {
-    display: block;
-  }
-}
-
 .footer {
   @extend .block-3;
   @extend .text-small;
