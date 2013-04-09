@@ -1,0 +1,63 @@
+@mixin hide-at-breakpoint($name) {
+  .breakpoint-#{$name} & {
+    display: none;
+  }
+}
+
+@mixin show-at-breakpoint($name) {
+  display: none;
+  .breakpoint-#{$name} & {
+    display: block;
+  }
+}
+
+.footer {
+  @extend .block-3;
+  @extend .text-small;
+  padding: spacing(4) spacing(4);
+  @media (max-width: 480px) {
+    font-size: 11px;
+    padding: spacing(3) spacing(1);
+  }
+}
+
+.footer__links {
+  @extend .r-grid;
+  @include clear-floats;
+  margin: spacing(1) 0 spacing(3);
+  @media (max-width: 959px) {
+    display: none;
+  }
+}
+
+.footer__copyright {
+  @include clear-floats;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
+}
+
+.footer__copyright-links {
+  @include clear-floats;
+  float: right;
+  @media (max-width: 800px) {
+    display: block;
+    float: none;
+
+    // TODO: remove this
+    li {
+      float: none;
+    }
+  }
+}
+
+.footer__copyright-text {
+  @extend .text--grey;
+  float: left;
+  @media (max-width: 800px) {
+    display: block;
+    float: none;
+    padding: 0 spacing(4);
+    margin-top: spacing(1);
+  }
+}
