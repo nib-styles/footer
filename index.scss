@@ -48,3 +48,9 @@
     margin-top: spacing(1);
   }
 }
+
+// IOS fix
+.abn, .abn a {
+  color: $light-grey;
+  text-decoration: none;
+}
