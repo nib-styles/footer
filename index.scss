@@ -1,7 +1,7 @@
 .footer {
   @extend .block-3;
   @extend .text-small;
-  padding: spacing(4) spacing(4);
+  padding: spacing(4) spacing(2);
   @media (max-width: 480px) {
     font-size: 11px;
     padding: spacing(3) spacing(1);
