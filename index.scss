@@ -9,7 +9,6 @@
 }
 
 .footer__links {
-  @extend .r-grid !optional;
   @include clear-floats;
   margin: spacing(1) 0 spacing(3);
   @media (max-width: 959px) {
