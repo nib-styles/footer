@@ -1,5 +1,11 @@
 .footer {
   padding: 40px 20px;
+  font-size:12px;
+  line-height:18px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #363636;
+  background-image: linear-gradient(top,#363636 0,#444 40%);
+  color: #fff;
 }
 
 @media (max-width:480px) {
@@ -11,6 +17,11 @@
 
 .footer__links {
   margin: 10px 0 30px;
+}
+
+.footer__links:after,
+.footer__copyright-links:after {
+  clear: both;
 }
 
 @media (max-width:959px) {
@@ -41,6 +52,7 @@
 
 .footer__copyright-text {
   float: left;
+  color: #999;
 }
 
 @media (max-width:800px) {
