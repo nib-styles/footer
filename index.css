@@ -46,7 +46,7 @@
     float: none;
   }
   .footer__copyright-links li {
-    float: none;
+    float: none !important;
   }
 }
 
