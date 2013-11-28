@@ -1,6 +1,6 @@
 .footer {
   background-color: #363636;
-  background-image: linear-gradient(top,#363636 0,#444 40%);
+  background-image: linear-gradient(to bottom,#363636 0,#444 40%);
   color: #fff;
   font-size:12px;
   line-height:18px;
